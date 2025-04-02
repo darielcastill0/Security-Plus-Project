@@ -36,7 +36,6 @@
             this.lblSelect = new System.Windows.Forms.Label();
             this.lblQuestions = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnOpen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGenerate
@@ -104,25 +103,12 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // btnOpen
-            // 
-            this.btnOpen.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpen.Location = new System.Drawing.Point(459, 244);
-            this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(140, 35);
-            this.btnOpen.TabIndex = 16;
-            this.btnOpen.Text = "Select File";
-            this.btnOpen.UseVisualStyleBackColor = true;
-            this.btnOpen.Visible = false;
-            this.btnOpen.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(602, 324);
-            this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.lblQuestions);
             this.Controls.Add(this.lblSelect);
             this.Controls.Add(this.txtQuestions);
@@ -145,7 +131,6 @@
         private System.Windows.Forms.Label lblSelect;
         private System.Windows.Forms.Label lblQuestions;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button btnOpen;
     }
 }
 

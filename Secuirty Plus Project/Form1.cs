@@ -55,7 +55,6 @@ namespace Secuirty_Plus_Project
         private void Form1_Load(object sender, EventArgs e)
         {
             CenterToScreen();
-
             try
             { //reads the csv file
                 string temp = null;
@@ -151,6 +150,8 @@ namespace Secuirty_Plus_Project
 
                 quizes = data.ToArray();
                 csvParser.Close();
+
+                Show();
             }
             catch (IndexOutOfRangeException)
             {
@@ -316,7 +317,7 @@ namespace Secuirty_Plus_Project
                     row++;
                 }//end while
 
-                Quiz Form2 = new Quiz(questions);
+                Quiz Form2 = new Quiz(questions, file);
 
                 Form2.ShowDialog();
                 exclude.Clear();
@@ -363,16 +364,6 @@ namespace Secuirty_Plus_Project
         //    splash.Close();
 
         //    Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            btnOpen.Visible = false;
-            lblQuestions.Visible = true;
-            lblSelect.Visible = true;
-            btnGenerate.Visible = true;
-            cboQuiz.Visible = true;
-            txtQuestions.Visible = true;
         }
     }
 }

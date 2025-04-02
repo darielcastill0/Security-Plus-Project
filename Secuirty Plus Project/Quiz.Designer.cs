@@ -44,12 +44,12 @@
             // lblQTitle
             // 
             this.lblQTitle.AutoSize = true;
-            this.lblQTitle.Font = new System.Drawing.Font("Microsoft JhengHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQTitle.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQTitle.ForeColor = System.Drawing.Color.White;
             this.lblQTitle.Location = new System.Drawing.Point(38, 26);
             this.lblQTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblQTitle.Name = "lblQTitle";
-            this.lblQTitle.Size = new System.Drawing.Size(49, 24);
+            this.lblQTitle.Size = new System.Drawing.Size(42, 21);
             this.lblQTitle.TabIndex = 7;
             this.lblQTitle.Text = "Title";
             // 
