@@ -44,23 +44,23 @@
             // lblQTitle
             // 
             this.lblQTitle.AutoSize = true;
-            this.lblQTitle.Font = new System.Drawing.Font("Perpetua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQTitle.Font = new System.Drawing.Font("Microsoft JhengHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQTitle.ForeColor = System.Drawing.Color.White;
-            this.lblQTitle.Location = new System.Drawing.Point(49, 25);
+            this.lblQTitle.Location = new System.Drawing.Point(38, 26);
             this.lblQTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblQTitle.Name = "lblQTitle";
-            this.lblQTitle.Size = new System.Drawing.Size(49, 22);
+            this.lblQTitle.Size = new System.Drawing.Size(49, 24);
             this.lblQTitle.TabIndex = 7;
             this.lblQTitle.Text = "Title";
             // 
             // radA
             // 
             this.radA.AutoSize = true;
-            this.radA.Font = new System.Drawing.Font("Perpetua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radA.Font = new System.Drawing.Font("Microsoft JhengHei", 14.25F, System.Drawing.FontStyle.Bold);
             this.radA.ForeColor = System.Drawing.Color.White;
             this.radA.Location = new System.Drawing.Point(6, 28);
             this.radA.Name = "radA";
-            this.radA.Size = new System.Drawing.Size(69, 26);
+            this.radA.Size = new System.Drawing.Size(73, 28);
             this.radA.TabIndex = 14;
             this.radA.TabStop = true;
             this.radA.Text = "radA";
@@ -70,11 +70,11 @@
             // radB
             // 
             this.radB.AutoSize = true;
-            this.radB.Font = new System.Drawing.Font("Perpetua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radB.Font = new System.Drawing.Font("Microsoft JhengHei", 14.25F, System.Drawing.FontStyle.Bold);
             this.radB.ForeColor = System.Drawing.Color.White;
             this.radB.Location = new System.Drawing.Point(6, 106);
             this.radB.Name = "radB";
-            this.radB.Size = new System.Drawing.Size(139, 26);
+            this.radB.Size = new System.Drawing.Size(149, 28);
             this.radB.TabIndex = 15;
             this.radB.TabStop = true;
             this.radB.Text = "radioButton2";
@@ -84,11 +84,11 @@
             // radC
             // 
             this.radC.AutoSize = true;
-            this.radC.Font = new System.Drawing.Font("Perpetua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radC.Font = new System.Drawing.Font("Microsoft JhengHei", 14.25F, System.Drawing.FontStyle.Bold);
             this.radC.ForeColor = System.Drawing.Color.White;
             this.radC.Location = new System.Drawing.Point(6, 188);
             this.radC.Name = "radC";
-            this.radC.Size = new System.Drawing.Size(139, 26);
+            this.radC.Size = new System.Drawing.Size(149, 28);
             this.radC.TabIndex = 16;
             this.radC.TabStop = true;
             this.radC.Text = "radioButton3";
@@ -98,11 +98,11 @@
             // radD
             // 
             this.radD.AutoSize = true;
-            this.radD.Font = new System.Drawing.Font("Perpetua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radD.Font = new System.Drawing.Font("Microsoft JhengHei", 14.25F, System.Drawing.FontStyle.Bold);
             this.radD.ForeColor = System.Drawing.Color.White;
             this.radD.Location = new System.Drawing.Point(6, 285);
             this.radD.Name = "radD";
-            this.radD.Size = new System.Drawing.Size(139, 26);
+            this.radD.Size = new System.Drawing.Size(149, 28);
             this.radD.TabIndex = 17;
             this.radD.TabStop = true;
             this.radD.Text = "radioButton4";

@@ -36,7 +36,6 @@
             this.lblSelect = new System.Windows.Forms.Label();
             this.lblQuestions = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.btnOpen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -105,15 +104,10 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
-            // 
             // btnOpen
             // 
             this.btnOpen.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpen.Location = new System.Drawing.Point(227, 244);
+            this.btnOpen.Location = new System.Drawing.Point(459, 244);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(140, 35);
             this.btnOpen.TabIndex = 16;
@@ -151,7 +145,6 @@
         private System.Windows.Forms.Label lblSelect;
         private System.Windows.Forms.Label lblQuestions;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button btnOpen;
     }
 }

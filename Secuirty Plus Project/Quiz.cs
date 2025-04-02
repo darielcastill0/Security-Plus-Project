@@ -159,9 +159,9 @@ namespace Secuirty_Plus_Project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 main = new Form1();
-            main.Show();
-            Close();
+            //Form1 main = new Form1();
+           // main.Show();
+            //Close();
         }
     }
 }
