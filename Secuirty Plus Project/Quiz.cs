@@ -26,7 +26,6 @@ namespace Secuirty_Plus_Project
             this.file = file;
             quiz = questions;
             InitializeComponent();
-            //helllo
         }
 
         private void Quiz_Load(object sender, EventArgs e)
