@@ -246,37 +246,35 @@ namespace Secuirty_Plus_Project
 
                     temp = cboQuiz.SelectedItem.ToString();
 
-                    int s = 0;
-
                     if (temp.Length == 6){ //checks if the quiz contains a double digit number
-                         s = temp[temp.Length - 1] - '0';
+                         quiz = temp[temp.Length - 1] - '0';
                     }
                     else{
-                        s = ((temp[temp.Length - 2] - '0') * 10) + (temp[temp.Length - 1] - '0'); 
+                        quiz = ((temp[temp.Length - 2] - '0') * 10) + (temp[temp.Length - 1] - '0'); 
                     }
                     
                     if (moduleSize == 2){
                       
-                        start = quizStart[s - 1];
+                        start = quizStart[quiz - 1];
 
-                        end = quizStart[s + 1] - 1;
+                        end = quizStart[quiz + 1] - 1;
 
-                        questionTotal = (quizStart[s + 1] - start) / 6;
+                        questionTotal = (quizStart[quiz + 1] - start) / 6;
                     }
                     else{ //if module size is 3
 
                         if (temp == "Quiz 20"){ //if the last module is selected
-                            start = quizStart[s - 1];
+                            start = quizStart[quiz - 1];
                             end = quizes.Length;
 
                             questionTotal = (end - start) / 6;
                         }
                         else{
-                            start = quizStart[s - 1];
+                            start = quizStart[quiz - 1];
 
-                            end = quizStart[s + 2] - 1;
+                            end = quizStart[quiz + 2] - 1;
 
-                            questionTotal = (quizStart[s + 2] - start) / 6;
+                            questionTotal = (quizStart[quiz + 2] - start) / 6;
                         } //end if
                     }
                 }//end if
