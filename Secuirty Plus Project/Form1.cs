@@ -315,7 +315,8 @@ namespace Secuirty_Plus_Project
 
                 Quiz Form2 = new Quiz(questions, file);
 
-                Form2.ShowDialog();
+                Form2.Show();
+                this.Hide();
                 exclude.Clear();
             }
             catch (FormatException)
