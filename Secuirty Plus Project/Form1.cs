@@ -3,34 +3,24 @@
 //  Author: Dariel Castillo
 //  Purpose: This program reads the csv file sent by Asend Education containing the quiz questions. 
 
+using Microsoft.VisualBasic.FileIO;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Diagnostics.Eventing.Reader;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Console;
-using Microsoft.VisualBasic.FileIO;
-using Microsoft.VisualBasic;
-using System.Runtime.InteropServices;
-using Microsoft.VisualBasic.ApplicationServices;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
-using System.Reflection.Emit;
-using System.Diagnostics;
 
 
 namespace Secuirty_Plus_Project
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        string file = "";
+        public Form1(string file)
         {
             InitializeComponent();
+            this.file = file;
         }
 
         //csv file format: Question, Answer A, Answer B, Answer C, Answer D, Right Answer Choice
@@ -48,17 +38,15 @@ namespace Secuirty_Plus_Project
 
         HashSet<int> exclude = new HashSet<int>(); //numbers already generated
 
-        string file = "w";
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
- 
             CenterToScreen();
-
             try
             { //reads the csv file
                 string temp = null;
-                string file = "C:\\Users\\DarCas816\\OneDrive - Berks Career & Technology Center\\Level 3\\Security Plus Project\\Security-Plus-Project-master\\Security_701_Question_Bank_1.csv";
+                //string file = "C:\\Users\\DarCas816\\OneDrive - Berks Career & Technology Center\\Level 3\\Security Plus Project\\Security-Plus-Project-master\\Security_701_Question_Bank_1.csv";
                 string ext = Path.GetExtension(file); //file extension
 
                 //checks the extenstion of the file
@@ -122,7 +110,7 @@ namespace Secuirty_Plus_Project
                             num = qNum[((temp[5] - '0')) - 1];
                         }
 
-                        switch (qNum[num - 1])
+                        switch (qNum[num - 1]) //adds the module to the list box
                         {
                             case 2: cboQuiz.Items.Add("Module 2"); break;
                             case 4: cboQuiz.Items.Add("Module 3"); break;
@@ -150,6 +138,8 @@ namespace Secuirty_Plus_Project
 
                 quizes = data.ToArray();
                 csvParser.Close();
+
+                Show();
             }
             catch (IndexOutOfRangeException)
             {
@@ -315,7 +305,7 @@ namespace Secuirty_Plus_Project
                     row++;
                 }//end while
 
-                Quiz Form2 = new Quiz(questions);
+                Quiz Form2 = new Quiz(questions, file);
 
                 Form2.ShowDialog();
                 exclude.Clear();
@@ -362,123 +352,6 @@ namespace Secuirty_Plus_Project
         //    splash.Close();
 
         //    Show();
-        }
-
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
-            //try
-            //{ //reads the csv file
-            //    string temp = null;
-            //    file = openFileDialog1.FileName;
-            //    string ext = Path.GetExtension(file); //file extension
-
-            //    //checks the extenstion of the file
-            //    if (ext == ".xlsx")
-            //    {
-            //        file = Path.ChangeExtension(file, ".csv"); //changes excel spreadsheet to .csv
-            //    }
-            //    else if (ext != ".csv")
-            //    {
-            //        throw new IndexOutOfRangeException("\"Invalid file \\n Only .xlsx and .csv files are supported\"");
-            //    }//end if
-
-            //    btnGenerate.Visible = true;
-
-            //    TextFieldParser csvParser = new TextFieldParser(file);
-
-            //    //csv settings
-            //    csvParser.CommentTokens = new string[] { "#" };
-            //    csvParser.SetDelimiters(new string[] { "," });
-            //    csvParser.HasFieldsEnclosedInQuotes = true;
-
-            //    //Skips the row with the column names and Quiz identifier 
-            //    csvParser.ReadLine();
-            //    temp = csvParser.ReadLine();
-
-
-            //    qNum.Add(temp[5] - '0');
-            //    quizStart.Add(0);
-            //    cboQuiz.Items.Add("Module 1");
-            //    cboQuiz.Items.Add("Quiz " + qNum[(temp[5] - '0') - 1]);
-
-            //    List<string> data = new List<string>();
-
-            //    while (!csvParser.EndOfData)
-            //    {
-            //        string[] records = new string[6];
-            //        records = csvParser.ReadFields();
-
-
-            //        if (records[1] == "")
-            //        {  //Skips the row with the column names and Quiz identifier 
-            //            csvParser.ReadLine();
-            //            temp = csvParser.ReadLine();
-
-            //            qNum.Add(temp[5] - '0'); //gets the quiz number
-
-            //            int num = 0;
-
-            //            if (Char.IsNumber(temp[6]))
-            //            {
-
-            //                qNum.RemoveAt(qNum.Count - 1);
-
-            //                num = (temp[5] - '0') * 10 + (temp[6] - '0');
-
-            //                qNum.Add(num);
-            //                cboQuiz.Items.Add("Quiz " + qNum[num - 1]);
-            //            }
-            //            else
-            //            {
-            //                cboQuiz.Items.Add("Quiz " + qNum[(temp[5] - '0') - 1]);
-            //                num = qNum[((temp[5] - '0')) - 1];
-            //            }
-
-            //            switch (qNum[num - 1])
-            //            {
-            //                case 2: cboQuiz.Items.Add("Module 2"); break;
-            //                case 4: cboQuiz.Items.Add("Module 3"); break;
-            //                case 6: cboQuiz.Items.Add("Module 4"); break;
-            //                case 8: cboQuiz.Items.Add("Module 5"); break;
-            //                case 11: cboQuiz.Items.Add("Module 6"); break;
-            //                case 14: cboQuiz.Items.Add("Module 7"); break;
-            //                case 16: cboQuiz.Items.Add("Module 8"); break;
-            //                case 19: cboQuiz.Items.Add("Module 9"); break;
-
-            //            }
-            //            quizStart.Add(data.Count);
-            //        }
-            //        else
-            //        {
-            //            string[] filtered = new string[6];
-
-            //            for (int i = 0; i <= 5; i++)
-            //            { //filters out the commas
-            //                data.Add(records[i]);  //Every question is 6 elements (question, 4 options, correct answer)
-            //            }//end while
-            //        }//end if
-            //    }//end while
-
-
-            //    quizes = data.ToArray();
-            //    csvParser.Close();
-            //}
-            //catch (IndexOutOfRangeException)
-            //{
-            //    MessageBox.Show("Invalid file \n Only .xlsx and .csv files are supported");
-            //}//end try
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            openFileDialog1.ShowDialog();
-
-            btnOpen.Visible = false;
-            lblQuestions.Visible = true;
-            lblSelect.Visible = true;
-            btnGenerate.Visible = true;
-            cboQuiz.Visible = true;
-            txtQuestions.Visible = true;
         }
     }
 }

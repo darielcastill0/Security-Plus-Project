@@ -20,12 +20,13 @@ namespace Secuirty_Plus_Project
         int row = 0;
 
         string Answer = "";
-
-        public Quiz(string[,] questions)
+        string file = "";
+        public Quiz(string[,] questions, string file)
         {
+            this.file = file;
             quiz = questions;
             InitializeComponent();
-
+            //helllo
         }
 
         private void Quiz_Load(object sender, EventArgs e)
@@ -159,7 +160,7 @@ namespace Secuirty_Plus_Project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 main = new Form1();
+            Form1 main = new Form1(file);
             main.Show();
             Close();
         }

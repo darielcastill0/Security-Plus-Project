@@ -104,7 +104,7 @@ namespace Secuirty_Plus_Project.Properties {
         ///   Looks up a localized string similar to Question,Answer A,Answer B,Answer C,Answer D,Right Answer Choice,,,,,,,,,,,,,,,,,,
         ///Quiz 1,,,,,,,,,,,,,,,,,,,,,,,
         ///A user in shipping inadvertently makes changes to a document on the server intended to be modified by the accounting department. Which of the following BEST describes the security property that has been violated?,Confidentiality,Accessibility,Integrity,Availability,C,,,,,,,,,,,,,,,,,,
-        ///An admin is provisioning a user account for a new employee joining the sales department.  A unique username an [rest of string was truncated]&quot;;.
+        ///An admin is provisioning a user account for a new employee joining the sales department.  A unique username and i [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Security_701_Question_Bank_1 {
             get {
