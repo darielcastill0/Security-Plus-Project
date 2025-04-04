@@ -50,8 +50,6 @@ namespace Secuirty_Plus_Project
 
         HashSet<int> exclude = new HashSet<int>(); //numbers already generated
 
-
-
         private void Form1_Load(object sender, EventArgs e)
         {
             CenterToScreen();
@@ -356,14 +354,6 @@ namespace Secuirty_Plus_Project
             int index = rand.Next(0, max - exclude.Count);
 
             return range.ElementAt(index);
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-        //    Form2 splash = new Form2();
-        //    splash.Close();
-
-        //    Show();
         }
     }
 }
