@@ -4,6 +4,7 @@
 //  Purpose: This program reads the csv file sent by Asend Education containing the quiz questions. 
 
 using Microsoft.VisualBasic.FileIO;
+using Secuirty_Plus_Project.Properties;
 using System;
 using System.Collections.Generic;
 using System.Data;
