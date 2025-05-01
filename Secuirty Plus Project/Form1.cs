@@ -3,25 +3,13 @@
 //  Author: Dariel Castillo
 //  Purpose: This program reads the csv file sent by Asend Education containing the quiz questions. 
 
+using Microsoft.VisualBasic.FileIO;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Diagnostics.Eventing.Reader;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Console;
-using Microsoft.VisualBasic.FileIO;
-using Microsoft.VisualBasic;
-using System.Runtime.InteropServices;
-using Microsoft.VisualBasic.ApplicationServices;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
-using System.Reflection.Emit;
-using System.Diagnostics;
 
 
 namespace Secuirty_Plus_Project
@@ -56,7 +44,6 @@ namespace Secuirty_Plus_Project
             try
             { //reads the csv file
                 string temp = null;
-                //string file = "C:\\Users\\DarCas816\\OneDrive - Berks Career & Technology Center\\Level 3\\Security Plus Project\\Security-Plus-Project-master\\Security_701_Question_Bank_1.csv";
                 string ext = Path.GetExtension(file); //file extension
 
                 //checks the extenstion of the file
@@ -120,7 +107,7 @@ namespace Secuirty_Plus_Project
                             num = qNum[((temp[5] - '0')) - 1];
                         }
 
-                        switch (qNum[num - 1])
+                        switch (qNum[num - 1]) //adds the module to the list box
                         {
                             case 2: cboQuiz.Items.Add("Module 2"); break;
                             case 4: cboQuiz.Items.Add("Module 3"); break;
