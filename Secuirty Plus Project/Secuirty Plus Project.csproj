@@ -102,7 +102,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="Resources\Security_701_Question_Bank_1.csv" />
-    <None Include="Security_701_Question_Bank_1.csv" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
