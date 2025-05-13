@@ -44,12 +44,12 @@
             // lblQTitle
             // 
             this.lblQTitle.AutoSize = true;
-            this.lblQTitle.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQTitle.Font = new System.Drawing.Font("Microsoft JhengHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQTitle.ForeColor = System.Drawing.Color.White;
-            this.lblQTitle.Location = new System.Drawing.Point(38, 26);
+            this.lblQTitle.Location = new System.Drawing.Point(12, 19);
             this.lblQTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblQTitle.Name = "lblQTitle";
-            this.lblQTitle.Size = new System.Drawing.Size(42, 21);
+            this.lblQTitle.Size = new System.Drawing.Size(75, 36);
             this.lblQTitle.TabIndex = 7;
             this.lblQTitle.Text = "Title";
             // 
@@ -60,7 +60,7 @@
             this.radA.ForeColor = System.Drawing.Color.White;
             this.radA.Location = new System.Drawing.Point(6, 28);
             this.radA.Name = "radA";
-            this.radA.Size = new System.Drawing.Size(73, 28);
+            this.radA.Size = new System.Drawing.Size(90, 35);
             this.radA.TabIndex = 14;
             this.radA.TabStop = true;
             this.radA.Text = "radA";
@@ -74,7 +74,7 @@
             this.radB.ForeColor = System.Drawing.Color.White;
             this.radB.Location = new System.Drawing.Point(6, 106);
             this.radB.Name = "radB";
-            this.radB.Size = new System.Drawing.Size(149, 28);
+            this.radB.Size = new System.Drawing.Size(187, 35);
             this.radB.TabIndex = 15;
             this.radB.TabStop = true;
             this.radB.Text = "radioButton2";
@@ -88,7 +88,7 @@
             this.radC.ForeColor = System.Drawing.Color.White;
             this.radC.Location = new System.Drawing.Point(6, 188);
             this.radC.Name = "radC";
-            this.radC.Size = new System.Drawing.Size(149, 28);
+            this.radC.Size = new System.Drawing.Size(187, 35);
             this.radC.TabIndex = 16;
             this.radC.TabStop = true;
             this.radC.Text = "radioButton3";
@@ -102,7 +102,7 @@
             this.radD.ForeColor = System.Drawing.Color.White;
             this.radD.Location = new System.Drawing.Point(6, 285);
             this.radD.Name = "radD";
-            this.radD.Size = new System.Drawing.Size(149, 28);
+            this.radD.Size = new System.Drawing.Size(187, 35);
             this.radD.TabIndex = 17;
             this.radD.TabStop = true;
             this.radD.Text = "radioButton4";
@@ -116,7 +116,7 @@
             this.groupBox1.Controls.Add(this.radD);
             this.groupBox1.Controls.Add(this.radB);
             this.groupBox1.Controls.Add(this.radC);
-            this.groupBox1.Location = new System.Drawing.Point(12, 172);
+            this.groupBox1.Location = new System.Drawing.Point(12, 201);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1464, 335);
             this.groupBox1.TabIndex = 18;
@@ -125,7 +125,7 @@
             // btnNext
             // 
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(201, 774);
+            this.btnNext.Location = new System.Drawing.Point(191, 660);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(153, 81);
             this.btnNext.TabIndex = 19;
@@ -136,7 +136,7 @@
             // btnPrevious
             // 
             this.btnPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevious.Location = new System.Drawing.Point(28, 774);
+            this.btnPrevious.Location = new System.Drawing.Point(18, 660);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(153, 81);
             this.btnPrevious.TabIndex = 20;
@@ -148,7 +148,7 @@
             // btnCheck
             // 
             this.btnCheck.Font = new System.Drawing.Font("Perpetua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheck.Location = new System.Drawing.Point(12, 513);
+            this.btnCheck.Location = new System.Drawing.Point(12, 542);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(167, 41);
             this.btnCheck.TabIndex = 21;
@@ -160,7 +160,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1394, 788);
+            this.button1.Location = new System.Drawing.Point(1365, 660);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(153, 81);
             this.button1.TabIndex = 22;
@@ -172,8 +172,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SlateBlue;
-            this.ClientSize = new System.Drawing.Size(1559, 881);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(1584, 770);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.btnPrevious);
@@ -181,7 +181,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblQTitle);
             this.Name = "Quiz";
-            this.Text = "Quiz";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Quiz_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

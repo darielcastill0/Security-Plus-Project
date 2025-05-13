@@ -30,7 +30,6 @@ namespace Secuirty_Plus_Project
 
         private void Quiz_Load(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Maximized;
 
             Display();
         }
@@ -54,7 +53,7 @@ namespace Secuirty_Plus_Project
         {
             //updates the question display
             try{
-                lblQTitle.Text = Wrap(quiz[row, 0], 200);
+                lblQTitle.Text = Wrap(quiz[row, 0], 120);
                 radA.Text = "A) " + quiz[row, 1];
                 radB.Text = "B)" + quiz[row, 2];
                 radC.Text = "C)" + quiz[row, 3];

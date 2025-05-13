@@ -4,6 +4,7 @@
 //  Purpose: This program reads the csv file sent by Asend Education containing the quiz questions. 
 
 using Microsoft.VisualBasic.FileIO;
+using Secuirty_Plus_Project.Properties;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -38,15 +39,12 @@ namespace Secuirty_Plus_Project
 
         HashSet<int> exclude = new HashSet<int>(); //numbers already generated
 
-
-
         private void Form1_Load(object sender, EventArgs e)
         {
             CenterToScreen();
             try
             { //reads the csv file
                 string temp = null;
-                //string file = "C:\\Users\\DarCas816\\OneDrive - Berks Career & Technology Center\\Level 3\\Security Plus Project\\Security-Plus-Project-master\\Security_701_Question_Bank_1.csv";
                 string ext = Path.GetExtension(file); //file extension
 
                 //checks the extenstion of the file
@@ -236,37 +234,35 @@ namespace Secuirty_Plus_Project
 
                     temp = cboQuiz.SelectedItem.ToString();
 
-                    int s = 0;
-
                     if (temp.Length == 6){ //checks if the quiz contains a double digit number
-                         s = temp[temp.Length - 1] - '0';
+                         quiz = temp[temp.Length - 1] - '0';
                     }
                     else{
-                        s = ((temp[temp.Length - 2] - '0') * 10) + (temp[temp.Length - 1] - '0'); 
+                        quiz = ((temp[temp.Length - 2] - '0') * 10) + (temp[temp.Length - 1] - '0'); 
                     }
                     
                     if (moduleSize == 2){
                       
-                        start = quizStart[s - 1];
+                        start = quizStart[quiz - 1];
 
-                        end = quizStart[s + 1] - 1;
+                        end = quizStart[quiz + 1] - 1;
 
-                        questionTotal = (quizStart[s + 1] - start) / 6;
+                        questionTotal = (quizStart[quiz + 1] - start) / 6;
                     }
                     else{ //if module size is 3
 
                         if (temp == "Quiz 20"){ //if the last module is selected
-                            start = quizStart[s - 1];
+                            start = quizStart[quiz - 1];
                             end = quizes.Length;
 
                             questionTotal = (end - start) / 6;
                         }
                         else{
-                            start = quizStart[s - 1];
+                            start = quizStart[quiz - 1];
 
-                            end = quizStart[s + 2] - 1;
+                            end = quizStart[quiz + 2] - 1;
 
-                            questionTotal = (quizStart[s + 2] - start) / 6;
+                            questionTotal = (quizStart[quiz + 2] - start) / 6;
                         } //end if
                     }
                 }//end if
@@ -307,7 +303,8 @@ namespace Secuirty_Plus_Project
 
                 Quiz Form2 = new Quiz(questions, file);
 
-                Form2.ShowDialog();
+                Form2.Show();
+                this.Hide();
                 exclude.Clear();
             }
             catch (FormatException)
@@ -344,14 +341,6 @@ namespace Secuirty_Plus_Project
             int index = rand.Next(0, max - exclude.Count);
 
             return range.ElementAt(index);
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-        //    Form2 splash = new Form2();
-        //    splash.Close();
-
-        //    Show();
         }
     }
 }
