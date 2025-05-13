@@ -118,23 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="693105" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\693105.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2486" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2486.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Yippee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Yippee.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="think_big_discord_emoji_thinking_emoji_small_face__m2i8A0G6d3Z5d3i8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\think-big-discord-emoji-thinking-emoji-small-face--m2i8A0G6d3Z5d3i8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Main_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Main-Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Security_701_Question_Bank_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Security_701_Question_Bank_1.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>

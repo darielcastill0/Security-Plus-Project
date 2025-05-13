@@ -61,46 +61,6 @@ namespace Secuirty_Plus_Project.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _2486 {
-            get {
-                object obj = ResourceManager.GetObject("2486", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _693105 {
-            get {
-                object obj = ResourceManager.GetObject("693105", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap images {
-            get {
-                object obj = ResourceManager.GetObject("images", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Main_Logo {
-            get {
-                object obj = ResourceManager.GetObject("Main_Logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Question,Answer A,Answer B,Answer C,Answer D,Right Answer Choice,,,,,,,,,,,,,,,,,,
         ///Quiz 1,,,,,,,,,,,,,,,,,,,,,,,
         ///A user in shipping inadvertently makes changes to a document on the server intended to be modified by the accounting department. Which of the following BEST describes the security property that has been violated?,Confidentiality,Accessibility,Integrity,Availability,C,,,,,,,,,,,,,,,,,,
@@ -109,16 +69,6 @@ namespace Secuirty_Plus_Project.Properties {
         internal static string Security_701_Question_Bank_1 {
             get {
                 return ResourceManager.GetString("Security_701_Question_Bank_1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap think_big_discord_emoji_thinking_emoji_small_face__m2i8A0G6d3Z5d3i8 {
-            get {
-                object obj = ResourceManager.GetObject("think_big_discord_emoji_thinking_emoji_small_face__m2i8A0G6d3Z5d3i8", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
