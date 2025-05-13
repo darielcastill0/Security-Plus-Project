@@ -43,7 +43,7 @@
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(140, 89);
             this.btnGenerate.TabIndex = 2;
-            this.btnGenerate.Text = "Generate Qustion(s)";
+            this.btnGenerate.Text = "Generate Question(s)";
             this.btnGenerate.UseVisualStyleBackColor = true;
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
