@@ -49,7 +49,7 @@
             this.lblQTitle.Location = new System.Drawing.Point(12, 19);
             this.lblQTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblQTitle.Name = "lblQTitle";
-            this.lblQTitle.Size = new System.Drawing.Size(75, 36);
+            this.lblQTitle.Size = new System.Drawing.Size(58, 28);
             this.lblQTitle.TabIndex = 7;
             this.lblQTitle.Text = "Title";
             // 
@@ -60,7 +60,7 @@
             this.radA.ForeColor = System.Drawing.Color.White;
             this.radA.Location = new System.Drawing.Point(6, 28);
             this.radA.Name = "radA";
-            this.radA.Size = new System.Drawing.Size(90, 35);
+            this.radA.Size = new System.Drawing.Size(73, 28);
             this.radA.TabIndex = 14;
             this.radA.TabStop = true;
             this.radA.Text = "radA";
@@ -74,7 +74,7 @@
             this.radB.ForeColor = System.Drawing.Color.White;
             this.radB.Location = new System.Drawing.Point(6, 106);
             this.radB.Name = "radB";
-            this.radB.Size = new System.Drawing.Size(187, 35);
+            this.radB.Size = new System.Drawing.Size(149, 28);
             this.radB.TabIndex = 15;
             this.radB.TabStop = true;
             this.radB.Text = "radioButton2";
@@ -88,7 +88,7 @@
             this.radC.ForeColor = System.Drawing.Color.White;
             this.radC.Location = new System.Drawing.Point(6, 188);
             this.radC.Name = "radC";
-            this.radC.Size = new System.Drawing.Size(187, 35);
+            this.radC.Size = new System.Drawing.Size(149, 28);
             this.radC.TabIndex = 16;
             this.radC.TabStop = true;
             this.radC.Text = "radioButton3";
@@ -102,7 +102,7 @@
             this.radD.ForeColor = System.Drawing.Color.White;
             this.radD.Location = new System.Drawing.Point(6, 285);
             this.radD.Name = "radD";
-            this.radD.Size = new System.Drawing.Size(187, 35);
+            this.radD.Size = new System.Drawing.Size(149, 28);
             this.radD.TabIndex = 17;
             this.radD.TabStop = true;
             this.radD.Text = "radioButton4";
@@ -147,6 +147,8 @@
             // 
             // btnCheck
             // 
+            this.btnCheck.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCheck.Font = new System.Drawing.Font("Perpetua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheck.Location = new System.Drawing.Point(12, 542);
             this.btnCheck.Name = "btnCheck";
