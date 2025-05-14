@@ -55,9 +55,9 @@ namespace Secuirty_Plus_Project
             try{
                 lblQTitle.Text = Wrap(quiz[row, 0], 120);
                 radA.Text = "A) " + quiz[row, 1];
-                radB.Text = "B)" + quiz[row, 2];
-                radC.Text = "C)" + quiz[row, 3];
-                radD.Text = "D)" + quiz[row, 4];
+                radB.Text = "B) " + quiz[row, 2];
+                radC.Text = "C) " + quiz[row, 3];
+                radD.Text = "D) " + quiz[row, 4];
 
                 Answer = quiz[row, 5];
             }
